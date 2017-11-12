@@ -15,6 +15,9 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+
+    <!--Scroll Reveal-->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 </head>
 <body>
 <div class="container-fluid">
@@ -25,18 +28,18 @@
     </div>
     <div class="row heading__container">
         <div class="col-xs-12 heading__container__col">
-            <h1 class="heading__container__col__h1">Відгуки</h1>
+            <h1 class="heading__container__col__h1 from-top">Відгуки</h1>
         </div>
     </div>
     <div class="row response_1">
         <div class="col-md-4 response_1__person">
-            <img src="images/female3.png">
-            <p>Анжела</p>
-            <p>м. Львів</p>
+            <img class="from-left" src="images/female3.png">
+            <p class="from-bottom">Анжела</p>
+            <p class="from-bottom">м. Львів</p>
         </div>
         <div class="col-md-8 response_1__message">
-            <img src="images/like-new.png">
-            <div class="response_1__message__image__wrapper">
+            <img class="from-bottom" src="images/like-new.png">
+            <div class="response_1__message__image__wrapper from-right">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
@@ -44,12 +47,12 @@
                     in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
             </div>
-            <p class="response_1__message__date">22.04.2017</p>
+            <p class="response_1__message__date from-bottom">22.04.2017</p>
         </div>
     </div>
     <div class="row response_2">
         <div class="col-md-8 response_2__message">
-            <div class="response_2__message__image__wrapper">
+            <div class="response_2__message__image__wrapper from-left">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
@@ -57,26 +60,26 @@
                     in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
             </div>
-            <img src="images/dislike-new.png">
-            <p class="response_2__message__date">22.04.2017</p>
+            <img class="from-bottom" src="images/dislike-new.png">
+            <p class="response_2__message__date from-bottom">22.04.2017</p>
         </div>
         <div class="col-md-4 response_2__person">
-            <img src="images/male2.png">
+            <img class="from-right" src="images/male2.png">
             <br><br><br><br><br><br><br><br><br><br>
-            <p>Олег</p>
+            <p class="from-bottom">Олег</p>
             <br>
-            <p id="response_2__person__city">м. Київ</p>
+            <p class="from-bottom" id="response_2__person__city">м. Київ</p>
         </div>
     </div>
     <div class="row response_3">
         <div class="col-md-4 response_3__person">
-            <img src="images/male2.png">
-            <p>Андрій</p>
-            <p>м. Кривий Ріг</p>
+            <img class="from-left" src="images/male2.png">
+            <p class="from-bottom">Андрій</p>
+            <p class="from-bottom">м. Кривий Ріг</p>
         </div>
         <div class="col-md-8 response_3__message">
-            <img src="images/like-new.png">
-            <div class="response_3__message__image__wrapper">
+            <img class="from-bottom" src="images/like-new.png">
+            <div class="response_3__message__image__wrapper from-right">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
@@ -84,12 +87,12 @@
                     in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
             </div>
-            <p class="response_3__message__date">22.04.2017</p>
+            <p class="response_3__message__date from-bottom">22.04.2017</p>
         </div>
     </div>
     <div class="row response_4">
         <div class="col-md-8 response_4__message">
-            <div class="response_4__message__image__wrapper">
+            <div class="response_4__message__image__wrapper from-left">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
@@ -97,17 +100,48 @@
                     in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
             </div>
-            <img src="images/dislike-new.png">
-            <p class="response_4__message__date">22.04.2017</p>
+            <img class="from-bottom" src="images/dislike-new.png">
+            <p class="response_4__message__date from-bottom">22.04.2017</p>
         </div>
         <div class="col-md-4 response_4__person">
-            <img src="images/female3.png">
+            <img class="from-right" src="images/female3.png">
             <br><br><br><br><br><br><br><br><br><br>
-            <p>Антоніна</p>
+            <p class="from-bottom">Антоніна</p>
             <br>
-            <p id="response_4__person__city">м. Донецьк</p>
+            <p class="from-bottom" id="response_4__person__city">м. Донецьк</p>
         </div>
     </div>
 </div>
+<div id="fixed_add_response">
+    <a id="fixed_add_response_a" href="">+</a>
+    <!--<a id="fixed_add_response_a_hover" href="">Додати відгук</a>-->
+</div>
 </body>
 </html>
+<script>
+    window.sr = ScrollReveal();
+    sr.reveal('.from-left', {
+        origin: 'left',
+        distance: '100px',
+        duration: 1000,
+        delay: 300
+    });
+    sr.reveal('.from-bottom', {
+        origin: 'bottom',
+        distance: '100px',
+        duration: 1000,
+        delay: 300
+    });
+    sr.reveal('.from-right', {
+        origin: 'right',
+        distance: '100px',
+        duration: 1000,
+        delay: 300
+    });
+    sr.reveal('.from-top', {
+        origin: 'top',
+        distance: '100px',
+        duration: 500,
+        delay: 300
+    });
+</script>
