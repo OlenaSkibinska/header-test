@@ -1,0 +1,151 @@
+@font-face {
+    font-family: Caviar Dreams;
+    src: url(/tours-program/fonts/CaviarDreams.ttf) format("truetype");
+}
+@font-face {
+    font-family: Caviar Dreams;
+    font-weight: bold;
+    src: url(/tours-program/fonts/Caviar_Dreams_Bold.ttf);
+}
+@font-face {
+    font-family: Caviar Dreams;
+    font-style: italic;
+    src: url(/tours-program/fonts/CaviarDreams_Italic.ttf);
+}
+
+body {
+    padding-top: 54px;
+    font-family:"Caviar Dreams", serif;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+    }
+}
+
+header.masthead {
+    background:no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+header.masthead>.overlay {
+    padding: 5rem 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 992px) {
+    header.masthead>.overlay {
+        padding: 10rem 0;
+    }
+}
+
+.my-nav{
+    background-color: #ffffff;
+    border-bottom: gainsboro solid 1px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.my-nav .my-link{
+    color: #484A47;
+}
+
+.my-nav .active > .my-link{
+    color: #484A47;
+    font-weight: bold;
+}
+.kumpel-logo {
+    width: 65%;
+}
+.nav-container{
+    padding: 0 50px 0 50px;
+}
+.my-navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    list-style: none;
+}
+.my-nav .navbar-toggler {
+    color:#484A47;
+    border-color: #484A47;
+}
+.logo{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.my-item{
+    margin-right: 20px;
+}
+.my-item-z{
+    margin-left: 200px;
+    margin-right: 84px;
+    font-size: 20px;
+}
+.navbar-nav{
+    font-size: 18px;
+}
+.my-btn{
+    background-color: #ffffff;
+    border: #C73834 solid 1px;
+    font-size: 20px;
+    position: relative;
+    letter-spacing: 1px;
+    z-index: 1;
+    /*text-transform: uppercase;*/
+    outline: 0;
+    overflow:hidden;
+    color: #C73834;
+}
+
+.my-span {
+    border: gainsboro solid 1px;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 12px;
+
+}
+
+.dropdown-menu{
+    min-width: 7rem;
+    padding: 12px;
+    color: #484A47;
+    font-size: 12px;
+
+
+}
+.dropdown-menu.show{
+    display: flex;
+}
+.dropdown-menu a{
+    color: #484A47;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.fill:hover {
+    color: whitesmoke;
+}
+
+.fill:before {
+    content: "";
+    position: absolute;
+    background: #C73834;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    -webkit-transition: top 0.09s ease-in;
+}
+
+.fill:hover:before {
+    top: 0;
+}

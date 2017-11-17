@@ -5,17 +5,17 @@
  */
 @font-face {
     font-family: Caviar Dreams;
-    src: url(/fonts/CaviarDreams.ttf) format("truetype");
+    src: url(/guids/fonts/CaviarDreams.ttf) format("truetype");
 }
 @font-face {
     font-family: Caviar Dreams;
     font-weight: bold;
-    src: url(/fonts/Caviar_Dreams_Bold.ttf);
+    src: url(/guids/fonts/Caviar_Dreams_Bold.ttf);
 }
 @font-face {
     font-family: Caviar Dreams;
     font-style: italic;
-    src: url(/fonts/CaviarDreams_Italic.ttf);
+    src: url(/guids/fonts/CaviarDreams_Italic.ttf);
 }
 
 body {
