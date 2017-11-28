@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+}
+.container-fluid {
+    padding: 0 !important;
+}
+.opening__page {
+    height: 679px;
+    background-image: url("images/background-photo2.jpg");
+    background-repeat: round;
+    border:0;
+    outline: 2px solid #fff;
+    outline-offset: -70px;
+    display: flex;
+}
+
+ul {
+    width: 100%;
+    font-size: 18px;
+    font-family: "Trebuchet MS", serif;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    /*background-color: #2F96D1;*/
+}
+ul li a {
+    color: white !important;
+    font-weight: bold;
+    padding-top: 20px !important;
+    padding-right: 35px !important;
+    text-shadow: 2px 4px 2px rgba(0,0,0,0.2);
+
+}
+.whitespace {
+    width: 98px;
+}
+.logo-kumpel {
+    position: absolute;
+    height: 94px;
+    width: 75px;
+    background-color: white;
+    border-radius: 0 0 50px 50px;
+    box-shadow: 5px 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.logo-kumpel img {
+    width: 80%;
+    margin-left: 12px;
+    margin-top: 8px;
+}
+.navbar-inverse {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.opening__page__row__slogan, .opening__page__row__center, .opening__page__row__bottom {
+    width: 100% !important;
+}
+.opening__page__row__slogan {
+    height: 14%;
+    /*background-color: #D2605D;*/
+    margin: 8% 0 0 0 !important;
+}
+.opening__page__row__center {
+    height: 48%;
+    margin: 0 !important;
+    /*background-color: darkgrey;*/
+}
+.opening__page__right {
+    background-color: rgba(159, 143, 143, 0.5);
+    height: 100%;
+    width: 40% !important;
+    border-radius: 10% 0 0 10%;
+    margin-left: 4.7%;
+    padding: 0 !important;
+}
+.opening__page__right img {
+    width: 90px;
+    margin-left: 78%;
+    float: left;
+}
+.opening__page__right h2 {
+    color: #ffffff;
+    float: left;
+    /*margin-left: 40%;*/
+    margin: 8px 0 8px 44%;
+}
+.opening__page__right p {
+    color: white;
+    float: left;
+    font-size: 20px;
+    margin: 10px 0 0 54%;
+    /*margin-left: 54%;*/
+}
+.opening__page__right div {
+    margin-top: 10px;
+    float: left;
+    width: 100%;
+    background-color: #C73834;
+    height: 50px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.opening__page__right div h3 {
+    font-size: 30px;
+    margin: 10px 0 10px 30px;
+    color: white;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+}
+.opening__page__row__bottom {
+    height: 12%;
+}
+.opening__page__row__bottom img {
+    margin-left: 10%;
+}
+.opening__page__slogan h1{
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+    font-family: "Trebuchet MS", serif;
+    font-weight: 900;
+    font-size: 42px !important;
+}
+.opening__page__whole {
+    padding: 0 !important;
+}
+/*.portfolio-item {*/
+    /*margin-bottom: 30px;*/
+/*}*/
+
+/*.pagination {*/
+    /*margin-bottom: 30px;*/
+/*}*/
+/*#large {*/
+    /*height:1000px;*/
+/*}*/
+/*#everything {*/
+    /*overflow: scroll;*/
+/*}*/
+/*.main__tours {*/
+    /*height:3000px;*/
+/*}*/
+/*Navigation*/

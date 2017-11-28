@@ -113,11 +113,19 @@
     </div>
 </div>
 <div id="fixed_add_response">
-    <a id="fixed_add_response_a" href="">+</a>
+    <a id="fixed_add_response_a" href="#">+</a>
     <!--<a id="fixed_add_response_a_hover" href="">Додати відгук</a>-->
+    <a id="fixed_add_response__close" href="#">&#10006</a>
+    <p class="fixed_add_response__label" id="fixed_add_response__label_first">Ваше ім'я</p>
+    <input class="fixed_add_response__input" title="">
+    <p class="fixed_add_response__label">Місто</p>
+    <input class="fixed_add_response__input" title="">
+    <p class="fixed_add_response__label">E-mail</p>
+    <input class="fixed_add_response__input" title="">
+    <p class="fixed_add_response__label">Відгук</p>
+    <input class="fixed_add_response__input_big" title="">
+    <button class="fixed_add_response__button">Надіслати</button>
 </div>
-</body>
-</html>
 <script>
     window.sr = ScrollReveal();
     sr.reveal('.from-left', {
@@ -144,4 +152,54 @@
         duration: 500,
         delay: 300
     });
+    var add_response_field = "#fixed_add_response",
+        add_response_text = "#fixed_add_response_a",
+        clicked_close = false;
+    response_popup = "#fixed_add_response__close, .fixed_add_response__label," +
+        " .fixed_add_response__input, .fixed_add_response__input_big," +
+        " .fixed_add_response__button";
+    if (clicked_close !== true) {
+        $(document).ready(function () {
+            $(add_response_field).hover(
+                function () {
+                    $(add_response_text).fadeOut("slow");
+                    $(add_response_text).text("Залишити відгук").fadeIn("slow");
+                    $(add_response_text).css("font-size", "23px");
+//                    $(add_response_text).css("line-height", "37px");
+                    return false;
+                },
+                function () {
+                    $(add_response_text).fadeOut("slow");
+                    $(add_response_text).text("+").fadeIn("slow");
+                    $(add_response_text).css("font-size", "40px");
+//                    $(add_response_text).css("line-height", "47px");
+                    return false;
+                });
+        });
+    }
+    $(add_response_field).click(function () {
+        if ($(this).css("transform") === 'none') {
+            clicked_close = true;
+            $(add_response_text).css("display", "none");
+            $(this).css({"width" : "250px" , "height": "475px"});
+            $(response_popup).css("display", "block");
+        } else {
+            $(this).css({"width" : "45px" , "height": "47px"});
+        }
+    });
 </script>
+<script>
+    $("#fixed_add_response__close").click(function () {
+        if ($(this).css("display") === 'block') {
+//        var add_response_block = "#fixed_add_response";
+            $(response_popup).css("display", "none");
+//        $("#fixed_add_response").css({"width" : "45px", "height" : "47px"});
+//        $("#fixed_add_response").css();
+        }
+        else {
+
+        }
+    });
+</script>
+</body>
+</html>
