@@ -4,17 +4,17 @@ a {
 }
 @font-face {
     font-family: Caviar Dreams;
-    src: url(/fonts/CaviarDreams.ttf) format("truetype");
+    src: url(/fonts/CaviarDreams.ttf) format("truetype") !important;
 }
 @font-face {
     font-family: Caviar Dreams;
     font-weight: bold;
-    src: url(/fonts/Caviar_Dreams_Bold.ttf) format("truetype");
+    src: url(/fonts/Caviar_Dreams_Bold.ttf) format("truetype") !important;
 }
 @font-face {
     font-family: Caviar Dreams;
     font-style: italic;
-    src: url(/fonts/CaviarDreams_Italic.ttf) format("truetype");
+    src: url(/fonts/CaviarDreams_Italic.ttf) format("truetype") !important;
 }
 * {
     box-sizing: border-box;
@@ -236,7 +236,7 @@ a {
     width: 45px;
     border-radius: 10px 0 0 10px;
     right: 0;
-    top:35%;
+    top:18%;
     background-color: #D2605D;
     color: white;
     padding-left: 10px;
@@ -252,18 +252,80 @@ a {
     /*transition: opacity 1s linear;*/
     /*transition-delay: 1s;*/
 }
-#fixed_add_response_a_hover {
-    opacity: 0;
+/*#fixed_add_response_a_hover {*/
+    /*opacity: 0;*/
+    /*font-size: 24px;*/
+    /*text-align: center;*/
+    /*vertical-align: middle;*/
+    /*line-height: 47px;*/
+/*}*/
+
+#fixed_add_response__close {
+    display: none;
+    position: absolute;
+    font-weight: bold;
+    margin-left: 83%;
     font-size: 24px;
-    text-align: center;
-    vertical-align: middle;
-    line-height:47px;
+    text-align: right;
+    font-family: "Trebuchet MS", serif;
 }
+
 /*#fixed_add_response:hover #fixed_add_response_a {*/
     /*opacity: 0;*/
 /*}*/
-/*#fixed_add_response:hover #fixed_add_response_a_hover{*/
-    /*opacity: 1;*/
-/*}*/
-
-
+#fixed_add_response:hover #fixed_add_response_a_hover{
+    opacity: 1;
+}
+.fixed_add_response__label , .fixed_add_response__input, .fixed_add_response__input_big, .fixed_add_response__button {
+    display: none;
+}
+.fixed_add_response__label {
+    font-size: 18px;
+    color: white;
+    font-family: "Trebuchet MS", serif;
+    margin-bottom: 0;
+    margin-left: 5%;
+}
+.fixed_add_response__input {
+    outline: none;
+    width: 92%;
+    font-size: 14px;
+    color: black;
+    height: 35px;
+    border-radius: 25px;
+    border: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #E8E6E6;
+    margin-left: 2%;
+}
+#fixed_add_response__label_first {
+    margin-top: 5%;
+}
+.fixed_add_response__input_big {
+    outline: none;
+    width: 92%;
+    font-size: 14px;
+    color: black;
+    height: 100px;
+    border-radius: 15px;
+    border: 0;
+    padding: 10px 10px 10px 10px;
+    background-color: #E8E6E6;
+    margin-left: 2%;
+}
+.fixed_add_response__button {
+    line-height: 2;
+    font-weight: bold;
+    outline: none;
+    width: 60%;
+    font-size: 20px;
+    color: black;
+    height: 9%;
+    border-radius: 15px;
+    border: 0;
+    margin-top: 6%;
+    margin-left: 18%;
+    background-color: #F2F2F2;
+    font-family: "Trebuchet MS", serif;
+}
