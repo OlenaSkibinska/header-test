@@ -1,0 +1,173 @@
+@font-face {
+    font-family: Cormorant Regular;
+    src: url(/header/fonts/Cormorant-Regular.otf) format("truetype");
+}
+@font-face {
+    font-family: Cormorant Garamond Regular;
+    src: url(/header/fonts/CormorantGaramond-Regular.otf) format("truetype");
+}
+@font-face {
+    font-family: CormorantInfant Regular;
+    src: url(/header/fonts/CormorantInfant-Regular.otf) format("truetype");
+}
+@font-face {
+    font-family: CormorantSC Regular;
+    src: url(/header/fonts/CormorantSC-Regular.otf) format("truetype");
+}
+@font-face {
+    font-family: CormorantUnicase Regular;
+    src: url(/header/fonts/CormorantUnicase-Regular.otf) format("truetype");
+}
+@font-face {
+    font-family: CormorantUpright Regular;
+    src: url(/header/fonts/CormorantUpright-Regular.otf) format("truetype");
+}
+
+body {
+    /*padding-top: 54px;*/
+    font-family: "Cormorant Regular", serif;
+}
+
+@media (min-width: 992px) {
+    body {
+        /*padding-top: 56px;*/
+    }
+}
+
+header.masthead {
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+header.masthead > .overlay {
+    padding: 5rem 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 992px) {
+    header.masthead > .overlay {
+        padding: 10rem 0;
+    }
+}
+
+.my-nav {
+    background-color: #ffffff;
+    border-bottom: gainsboro solid 1px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.my-nav .my-link {
+    color: #484A47;
+}
+
+.my-nav .active > .my-link {
+    color: #484A47;
+    font-weight: bold;
+}
+
+.kumpel-logo {
+    width: 65%;
+}
+
+.nav-container {
+    padding: 0 50px 0 50px;
+}
+
+.my-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+.my-nav .navbar-toggler {
+    color: #484A47;
+    border-color: #484A47;
+}
+
+.logo {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.my-item {
+    margin-right: 20px;
+}
+
+.my-item-z {
+    margin-left: 100px;
+    margin-right: 50px;
+    font-size: 16px;
+}
+
+.navbar-nav {
+    font-size: 17px;
+}
+
+.my-btn {
+    background-color: #ffffff;
+    border: #C73834 solid 1px;
+    font-size: 20px;
+    position: relative;
+    letter-spacing: 1px;
+    z-index: 1;
+    /*text-transform: uppercase;*/
+    outline: 0;
+    overflow: hidden;
+    color: #C73834;
+}
+
+.my-span {
+    border: gainsboro solid 1px;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 11px;
+
+}
+
+.dropdown-menu {
+    min-width: 7rem;
+    padding: 12px;
+    color: #484A47;
+    font-size: 12px;
+
+}
+
+.dropdown-menu.show {
+    display: flex;
+}
+
+.dropdown-menu a {
+    color: #484A47;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.fill:hover {
+    color: whitesmoke;
+}
+
+.fill:before {
+    content: "";
+    position: absolute;
+    background: #C73834;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    -webkit-transition: top 0.09s ease-in;
+}
+
+.fill:hover:before {
+    top: 0;
+}
